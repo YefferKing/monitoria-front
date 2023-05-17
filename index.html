@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Monitorias</title>
+</head>
+<body>
+    
+    <div class="rectangulo">
+        <img class="img" src="img/logosimon.png" alt="Imagen de ejemplo">
+    </div>
+    <br>
+    <div class="elemento">
+        <p>--------------------------------------------------------</p>
+        <h3><img src="img/menu_hamburguesa.png" width="20" height="20"> Caja de herramientas</h3>
+        <h4 class="mini-menu-herramientas">Biblioteca</h4>
+        <h4 class="mini-menu-herramientas">Bienestar Universitario</h4>
+        <h4 class="mini-menu-herramientas">MINOR</h4>
+        <h4 class="mini-menu-herramientas">PIEA</h4>
+        <p>--------------------------------------------------------</p>
+        <h3><img src="img/image (1).png" width="20" height="20"> Insignias recientes</h3>
+        <h4 class="mini-menu-herramientas-ins">No tiene insignias que mostrar</h4>
+      </div>
+
+    <div class="rec-pequeño">
+        <h1 class="h1">MONITORIAS</h1>
+    </div>
+    <div id="hover" class="mini-menu">
+        <ul>
+          <li><a id="btn-cursos" href="#">Cursos</a></li>
+          <li><a id="btn-monitores" href="#">Monitores</a></li>
+        </ul>
+        <div id="contenido"></div>
+      </div>      
+    <aside>
+    </aside>
+   
+    <script>
+        const btnCursos = document.querySelector('#btn-cursos');
+        const btnMonitores = document.querySelector('#btn-monitores');
+        const contenido = document.querySelector('#contenido');
+      
+        // Evento click para el botón Cursos
+        btnCursos.addEventListener('click', () => {
+          contenido.innerHTML = '<h2>Lista de Cursos</h2><ul><li><img src="imagen1.jpg"> Curso 1</li><li><img src="imagen2.jpg"> Curso 2</li><li><img src="imagen3.jpg"> Curso 3</li></ul>';
+        });
+      
+        // Evento click para el botón Monitores
+        btnMonitores.addEventListener('click', () => {
+          contenido.innerHTML = '<h2>Lista de Monitores</h2><ul><li><img src="imagen1.jpg"> Monitor 1</li><li><img src="imagen2.jpg"> Monitor 2</li><li><img src="imagen3.jpg"> Monitor 3</li></ul>';
+        });
+      </script>
+
+    <div id='calendar'></div>
+      
+</body>
+</html>

@@ -1,0 +1,89 @@
+#hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+.rectangulo {
+	background-color: green;
+	height: 120px;
+	width: 100%;
+  }
+
+  .img {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	width: 600px;
+	height: 100px;
+  }
+
+  .rec-pequeño{
+	background-color: green;
+	height: 50px;
+	width: 60%;
+	margin-left: 50px;
+  }
+
+.h1{
+	color: #fff;
+	margin-left: 20px;
+
+}
+
+.mini-menu {
+  background-color: #f5f5f5;
+  padding: 10px;
+  width: 30%;
+  margin-top: 0.8%;
+  margin-left: 50px;
+}
+
+.mini-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.mini-menu li {
+  margin-right: 20px;
+}
+
+.mini-menu li:last-child {
+  margin-right: 0;
+}
+
+.mini-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.mini-menu a:hover {
+  color: green;
+}
+
+.elemento {
+	border-right: 1px dotted black;
+	float: right;
+	padding-right: 10px; /* opcional, para dejar un espacio entre el contenido y la línea */
+  }
+
+  .mini-menu-herramientas {
+	background-color: #f5f5f5;
+	padding: 10px;
+	width: 60%;
+	margin-top: 0.8%;
+	margin-left: 30px;
+  }
+
+  .mini-menu-herramientas-ins {
+	background-color: #f5f5f5;
+	padding: 10px;
+	width: 60%;
+	margin-top: 0.8%;
+	margin-left: 30px;
+  }
+	
+  
