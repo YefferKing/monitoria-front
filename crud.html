@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Monitorias</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .editarBtn,
+        .eliminarBtn {
+            padding: 5px 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .editarBtn:hover,
+        .eliminarBtn:hover {
+            background-color: #45a049;
+        }
+
+
+        .botocurso{
+            background-color: green;
+            padding: 5px 10px;
+            color: #fff;
+            width: 50%;
+        }
+        .botonmonitor{
+            background-color: green;
+            padding: 5px 10px;
+            color: #fff;
+            width: 100%;
+        }
+        .text{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="rectangulo">
+        <img class="img" src="img/logosimon.png" alt="Imagen de ejemplo">
+    </div>
+    <br>
+    <div class="elemento">
+        <p>--------------------------------------------------------</p>
+        <h3><img src="img/menu_hamburguesa.png" width="20" height="20"> Caja de herramientas</h3>
+        <h4 class="mini-menu-herramientas">Biblioteca</h4>
+        <h4 class="mini-menu-herramientas">Bienestar Universitario</h4>
+        <h4 class="mini-menu-herramientas">MINOR</h4>
+        <h4 class="mini-menu-herramientas">PIEA</h4>
+        <p>--------------------------------------------------------</p>
+        <h3><img src="img/image (1).png" width="20" height="20"> Insignias recientes</h3>
+        <h4 class="mini-menu-herramientas-ins">No tiene insignias que mostrar</h4>
+    </div>
+
+    <div class="rec-pequeño">
+        <h1 class="h1">MONITORIAS</h1>
+    </div>
+    <div id="hover" class="mini-menu">
+        <ul>
+            <li><a id="cursosBtn" href="#">Cursos</a></li>
+            <li><a id="monitoresBtn" href="#">Monitores</a></li>
+        </ul>
+
+        <div id="cursosContainer" style="display: none;">
+            <h3 class="text">Ingrese un nuevo curso</h3>
+            <form id="cursoForm">
+              <div class="form-group">
+                <label for="codigoCurso">Código:</label>
+                <input type="text" id="codigoCurso" required>
+              </div>
+              <div class="form-group">
+                <label for="nombreCurso">Nombre:</label>
+                <input type="text" id="nombreCurso" required>
+              </div>
+              <div class="form-group">
+                <input class="botocurso" type="submit" value="Guardar">
+              </div>
+            </form>
+          </div>
+          
+
+        <div id="monitoresContainer" style="display: none;">
+            <h3 class="text">Ingrese un nuevo monitor</h3>
+            <form id="monitorForm">
+              <div class="form-group">
+                <label for="codigoMonitor">Código:</label>
+                <input type="text" id="codigoMonitor" required>
+              </div>
+              <div class="form-group">
+                <label for="nombreMonitor">Nombre:</label>
+                <input type="text" id="nombreMonitor" required>
+              </div>
+              <div class="form-group">
+                <label for="cursoMonitor">Curso:</label>
+                <input type="text" id="cursoMonitor" required>
+              </div>
+              <div class="form-group">
+                <label for="horario">Horario:</label>
+                <input type="text" id="horario" required>
+              </div>
+              <div class="form-group">
+                <label for="lugar">Lugar:</label>
+                <input type="text" id="lugar" required>
+              </div>
+              <div class="form-group">
+                <input class="botonmonitor" type="submit" value="Guardar">
+              </div>
+            </form>
+          </div>          
+        <table id="tablaCursos" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Código del Curso</th>
+                    <th>Nombre del Curso</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCursosBody"></tbody>
+        </table>
+
+        <table id="tablaMonitores" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Código del Monitor</th>
+                    <th>Nombre del Monitor</th>
+                    <th>Curso</th>
+                    <th>Horario</th>
+                    <th>Lugar</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaMonitoresBody"></tbody>
+        </table>
+
+        <script src="script.js"></script>
+        <div id="contenido"></div>
+    </div>
+    <aside>
+    </aside>
+
+</body>
+
+</html>

@@ -32,7 +32,7 @@
 .mini-menu {
   background-color: #f5f5f5;
   padding: 10px;
-  width: 30%;
+  width: 58%;
   margin-top: 0.8%;
   margin-left: 50px;
 }
@@ -86,4 +86,125 @@
 	margin-left: 30px;
   }
 	
-  
+  /*monitores*/
+
+  /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th, table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Estilos específicos */
+#monitorForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#monitorForm label {
+  margin-right: 10px;
+}
+
+#monitorTable {
+  margin-top: 20px;
+}
+
+#monitorTable th {
+  text-align: left;
+}
+
+#monitorTable td:last-child {
+  text-align: center;
+}
+
+#tablaCursos {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+#tablaMonitores {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+#cursoForm {
+  width: 58%;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+#monitorForm {
+  width: 58%;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#monitorForm label {
+  margin-bottom: 5px;
+}
+
+#monitorForm input[type="text"] {
+  margin-bottom: 10px;
+}
+
+#monitorForm {
+  width: 58%;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+#cursoForm {
+  width: 58%;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
