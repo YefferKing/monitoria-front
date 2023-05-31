@@ -208,3 +208,9 @@ table th, table td {
 .form-group label {
   margin-bottom: 5px;
 }
+
+.boton-verde {
+  background-color: green;
+  border-radius: 5px;
+}
+
